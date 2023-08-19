@@ -15,8 +15,9 @@ ms.author: jeedes
 ---
 
 ## Azure Active Directory (AD) SSO integration with Document360
-> Azure Active Directory = Azure AD
-> Single Sign-On = SSO
+> **Note**
+> *Azure Active Directory = Azure AD*
+> *Single Sign-On = SSO*
 
 This article teaches you how to integrate Document360 with Azure AD. Document360 is an online self-service knowledge base software. When you integrate Document360 with Azure AD, you can:
 
@@ -26,8 +27,8 @@ This article teaches you how to integrate Document360 with Azure AD. Document360
 
 You configure and test Azure AD single sign-on for Document360 in a test environment. Document360 supports **Service Provider (SP)** and **Identity Provider (IdP)** initiated SSO.
 
-> [!NOTE]
-> Identifier of this application is a fixed string value, so only one instance can be configured in one tenant.
+> **Note**
+> *Identifier of this application is a fixed string value, so only one instance can be configured in one tenant.*
 
 ## Prerequisites
 
@@ -62,7 +63,7 @@ Complete the following steps to enable Azure AD single sign-on in the Azure port
 
    ![Screenshot shows how to edit Basic SAML Configuration.](common/edit-urls.png "Basic Configuration")
 
-4. On the **Basic SAML Configuration** section, perform the following steps. Choose any one of the Identifier, Reply URL, and Sign on URL based on your Data center region
+4. Perform the following steps in the **Basic SAML Configuration** section. Choose any one of the Identifier, Reply URL, and Sign-on URLs based on your Datacenter region
 
     a. In the **Identifier** textbox, type/copy & paste one of the following URLs:
 
@@ -91,7 +92,7 @@ Complete the following steps to enable Azure AD single sign-on in the Azure port
     | `https://identity.us.document360.io` |
 
     > [!NOTE]
-    > You can also refer to the patterns shown in the Azure portal's **Basic SAML Configuration** section.
+    > Refer to the patterns in the Azure portal's **Basic SAML Configuration** section.
 
 6. On the **Set-up single sign-on with SAML** page, in the **SAML Signing Certificate** section, find **Certificate (Raw)** and select **Download** to download the certificate and save it on your computer.
 
@@ -105,7 +106,9 @@ Complete the following steps to enable Azure AD single sign-on in the Azure port
 
 To configure SSO on the **Document360** portal, you need to navigate to **Setting** → **Users & Security** → **SAML/OpenID** → **SAML**
 
-Click on the Edit icon in **SAML basic configuration** on the Document360 portal side and paste the values from Azure AD portal based on the below mentioned field associations.
+![Accessing SAML SSO in the Document360 portal](https://cdn.document360.io/860f9f88-412e-4570-8222-d5bf2f4b7dd1/Images/Documentation/85_Screenshot-SAML_Accessing_the_SAML_page.png){height="" width=""}
+
+Click on the Edit icon in **SAML basic configuration** on the Document360 portal side and paste the values from the Azure AD portal based on the below-mentioned field associations.
 
 
 | Document360 portal fields | Azure AD portal values |
@@ -116,14 +119,20 @@ Click on the Edit icon in **SAML basic configuration** on the Document360 portal
 | Sign Out URL | Logout URL |
 | SAML certificate | Download Certificate (Base64) from Azure AD side and upload in Document360 |
 
-Click on the **Save** button when you’re done with the values.
+Click the **Save** button when you're done with the values.
 
 
 ### Create Document360 test user
 
-In this section, you create a test user called Britta Simon at Document360. 
+In this section, you create a test user (For example, Britta Simon) at Document360. 
 
-From the Document360 portal, go to **Settings → Users & Security → Team accounts & groups  → Team accounts**. Click the **New team account** button at the top right. A **New team account** blade appears. Type in the required details, specify the roles, and follow the module steps to add a user to Document360. 
+![Adding a team account in Document360](https://cdn.document360.io/860f9f88-412e-4570-8222-d5bf2f4b7dd1/Images/Documentation/87_Screenshot-Team_accounts_adding_new_team_account.png){height="" width=""}
+
+1. Navigate to the Document360 portal
+2. Go to **Settings → Users & Security → Team accounts & groups  → Team accounts**
+3. Click the **+ New** button and select **New team account**
+4. A **New team account** blade appears
+5. Type in the required details, specify the roles and follow the module steps to add a user to Document360. 
 
 ## Test SSO 
 
@@ -150,4 +159,4 @@ For more information about the My Apps, see [Introduction to the My Apps](../use
 
 ## Next steps
 
-Once you configure Document360, you can enforce session control, which protects the exfiltration and infiltration of your organization's sensitive data in real-time. Session control extends from Conditional Access. [Learn how to enforce session control with Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).
+Once you configure Document360, you can enforce session control, which protects the exfiltration and infiltration of your organization's sensitive data in real time. Session control extends from Conditional Access. [Learn how to enforce session control with Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).
